@@ -20,6 +20,10 @@
   a { color:var(--accent); }
   footer { margin-top:40px; color:var(--muted); font-size:.9rem; border-top:1px solid #26304f; padding-top:18px; }
   .cta { display:inline-block; margin-top:22px; background:var(--coral); color:#fff; font-weight:700; text-decoration:none; padding:12px 22px; border-radius:12px; }
+  .cta { display:inline-flex; align-items:center; gap:10px; background:#fff; color:#0d1121; }
+  .yt { width:28px; height:20px; flex:none; }
+  .yt-notice { display:flex; gap:12px; align-items:flex-start; background:#0d1121; border-radius:12px; padding:12px 14px; }
+  .yt-notice .yt { margin-top:4px; }
   .cta:hover { filter:brightness(1.08); }
   .pill { display:inline-block; border:2px solid var(--coral); border-radius:999px; padding:4px 14px; margin-top:18px; font-size:.95rem; }
 </style>
@@ -34,7 +38,7 @@
     </div>
   </div>
   <span class="pill">New video every day · Beginner » Advanced » Interviews » AI Products</span>
-  <p><a class="cta" href="https://www.youtube.com/channel/UCR4xqYrDt9VJnsklAkP-lTQ?sub_confirmation=1">▶ Watch &amp; subscribe on YouTube</a></p>
+  <p><a class="cta" href="https://www.youtube.com/channel/UCR4xqYrDt9VJnsklAkP-lTQ?sub_confirmation=1"><svg class="yt" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg>Watch &amp; subscribe on YouTube</a></p>
 
   <div class="card">
     <strong>What this channel teaches</strong>
@@ -50,11 +54,14 @@
   <div class="card">
     <strong>About the uploader app</strong>
     <p>"Zero to AI Engineer Uploader" is a private tool used only by the channel owner to publish this channel's own
-    educational videos to YouTube through the YouTube Data API. It has no other users.
-    See the <a href="privacy.html">Privacy Policy</a>.</p>
+    educational videos to YouTube through the YouTube Data API. It has no other users.</p>
+    <p class="yt-notice"><svg class="yt" viewBox="0 0 28 20" aria-hidden="true"><rect width="28" height="20" rx="5" fill="#FF0000"/><path d="M11 5.5v9l8-4.5z" fill="#fff"/></svg><span>This app uses <strong>YouTube API Services</strong>. By using it you agree to the
+    <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. See also the
+    <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, our <a href="privacy.html">Privacy Policy</a>
+    and our <a href="terms.html">Terms of Service</a>.</span></p>
   </div>
 
-  <footer>© 2026 Zero to AI Engineer · <a href="https://www.youtube.com/channel/UCR4xqYrDt9VJnsklAkP-lTQ">YouTube</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a></footer>
+  <footer>© 2026 Zero to AI Engineer · <a href="https://www.youtube.com/channel/UCR4xqYrDt9VJnsklAkP-lTQ">YouTube channel</a> · <a href="privacy.html"><strong>Privacy Policy</strong></a> · <a href="terms.html">Terms of Service</a></footer>
 </main>
 </body>
 </html>
