@@ -52,6 +52,17 @@
   <a href="https://myaccount.google.com/permissions">Google Account → Third-party connections</a>.
   When access is revoked, the stored refresh token stops working.</p>
 
+  <h2>Data retention and deletion</h2>
+  <p>The app does not keep copies of YouTube data. It only stores the OAuth credentials needed to upload videos,
+  for as long as the channel owner uses the app. To delete them:</p>
+  <ol>
+    <li>Revoke the app's access at <a href="https://myaccount.google.com/permissions">Google Account → Third-party connections</a>.
+    The stored refresh token stops working immediately.</li>
+    <li>Delete the stored secrets (YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN) from the GitHub repository's
+    Actions secrets. This removes all credentials the app holds.</li>
+  </ol>
+  <p>Any deletion request sent to the channel owner is completed within 7 days.</p>
+
   <h2>Contact</h2>
   <p>For questions about this policy, contact the channel owner through the "Zero to AI Engineer" YouTube channel's About page.</p>
 </main>
